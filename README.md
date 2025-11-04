@@ -27,5 +27,5 @@ script.js
 styles.css
 ```
 
-## Licenca
-MIT
+## Screenshot
+Snimka zaslona: preview.png
