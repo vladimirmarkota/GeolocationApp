@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moja Lokacija</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbjX8uI6DVKHCQiAaxvzIl-X6DGpH2o2Y" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Moja Lokacija</h1>
+    <p class="subtitle">Prikaz trenutne lokacije & povijesti</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <label for="nameInput">Upišite svoje ime:</label>
+      <input type="text" id="nameInput" placeholder="Vaše ime" />
+      <button id="btnGet">Saznaj svoju lokaciju</button>
+      <p id="coordinates" class="coords muted">Latitude: — , Longitude: —</p>
+    </section>
+
+    <section id="map-container" class="card">
+      <div id="map"></div>
+    </section>
+
+    <section class="card">
+      <button id="btnClear" class="danger">Obriši sve</button>
+
+      <table id="locationTable">
+        <thead>
+          <tr>
+            <th>Ime</th>
+            <th>Lokacija (lat, lng)</th>
+            <th>Vrijeme</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
